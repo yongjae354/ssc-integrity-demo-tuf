@@ -1,0 +1,67 @@
+{
+ "signatures": [
+  {
+   "keyid": "b3ba2bf13135105f2edb3eb957719de86754093d9cd9456be8d5fae745d97889",
+   "sig": ""
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2027-07-31T02:50:47Z",
+  "keys": {
+   "687dbc1dfbd60f9bf5a5588f370fff4792da9af082e5f3314fa816b54fbe587e": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/yongjae354/ssc-integrity-demo-tuf/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   },
+   "b3ba2bf13135105f2edb3eb957719de86754093d9cd9456be8d5fae745d97889": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "90081943+yongjae354@users.noreply.github.com",
+     "issuer": "https://github.com/login/oauth"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-keyowner": "@yongjae354"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "b3ba2bf13135105f2edb3eb957719de86754093d9cd9456be8d5fae745d97889"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "687dbc1dfbd60f9bf5a5588f370fff4792da9af082e5f3314fa816b54fbe587e"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "b3ba2bf13135105f2edb3eb957719de86754093d9cd9456be8d5fae745d97889"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "687dbc1dfbd60f9bf5a5588f370fff4792da9af082e5f3314fa816b54fbe587e"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
